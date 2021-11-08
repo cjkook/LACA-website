@@ -5,3 +5,4 @@ Website designed for the Latin American Cultural Association and El Buen Amigo f
 * React
 * Sass
 * Gatsby JS
+* MDX
