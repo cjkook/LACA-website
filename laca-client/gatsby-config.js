@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Latin American Cultural Association`,
+    description: `The Latin American Cultural Association, L.A.C.A. (501-C-3), is a non-profit organization located in Buffalo, NY.`,
+    author: `cjko-ok.xyz`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
