@@ -5,13 +5,13 @@ import "./nav-bar.styles.scss";
 // ? Use logo
 // ? import { ReactComponent as Logo } from "../../assets/images/crown.svg";
 
-const NavBar = ({currentUser}) => (
+const NavBar = () => (
   <div className="header">
     <div className="logo-container">
       <Link to="/">
         {/* <Logo className="logo" /> */}
       </Link>
-      <h1 className="brandTitle">cjko-emporium</h1>
+      <h1 className="brandTitle">Latin American Cultural Association</h1>
       
     </div>
 

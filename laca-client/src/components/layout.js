@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar title={data.title}></NavBar>
       {/* <Grid container spacing={3}>
         <Grid item xs="auto">
           <h1>{data.site.siteMetadata?.title || `El Buen Amigo`}</h1>
