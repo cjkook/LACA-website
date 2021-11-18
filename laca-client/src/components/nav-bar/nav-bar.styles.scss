@@ -1,0 +1,54 @@
+@import "../../styles/_variables";
+
+.header {
+  height: 70px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  .logo-container {
+    justify-content:flex-start;
+    display: flex;
+    width: 60%;
+
+    .brandTitle {
+      @media only screen and (max-width: 1026px) {
+        display: none;
+      }
+    }
+
+    .animation {
+      // width: 20%;
+      padding: 15px 20px;
+
+      h4 {
+        display: flex;
+      }
+      @media only screen and (max-width: 1026px) {
+        display: none;
+      }
+    }
+
+    .logo {
+      // height: 100%;
+      // width: 70px;
+      padding: 25px;
+    }
+  }
+
+  .options {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: flex-end;
+    // justify-content: space-between;
+
+    .option {
+      padding: 10px 10px;
+      cursor: pointer;
+    }
+  }
+}

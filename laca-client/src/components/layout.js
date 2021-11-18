@@ -9,8 +9,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+import NavBar from "./nav-bar/nav-bar.component"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,16 +24,28 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header
-        siteTitle={
-          data.site.siteMetadata?.title || `Latin American Cultural Association`
-        }
-      />
+      <NavBar></NavBar>
+      {/* <Grid container spacing={3}>
+        <Grid item xs="auto">
+          <h1>{data.site.siteMetadata?.title || `El Buen Amigo`}</h1>
+        </Grid>
+        <Grid item xs="auto">
+          <h2>news</h2>
+        </Grid>
+        <Grid item xs="auto">
+          <h2>news</h2>
+        </Grid>
+        <Grid item xs="auto">
+          <h2>news</h2>
+        </Grid>
+      </Grid> */}
+      
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          margin: `0`,
+          // maxWidth: 960,
+          // padding: `0 1.0875rem 1.45rem`,
+
         }}
       >
         <main>{children}</main>
@@ -43,9 +54,9 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <p>cjko-ok</p>
         </footer>
       </div>
     </>
