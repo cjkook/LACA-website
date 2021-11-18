@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby"
 
 import "./nav-bar.styles.scss";
 // ? Use logo
@@ -8,23 +8,23 @@ import "./nav-bar.styles.scss";
 const NavBar = ({currentUser}) => (
   <div className="header">
     <div className="logo-container">
-      <a to="/">
+      <Link to="/">
         {/* <Logo className="logo" /> */}
-      </a>
+      </Link>
       <h1 className="brandTitle">cjko-emporium</h1>
       
     </div>
 
     <div className="options">
-      <a className="option" to="/shop">
+      <Link className="option" to="/shop">
         shop
-      </a>
-      <a className="option" to="/contact">
+      </Link>
+      <Link className="option" to="/contact">
         contact
-      </a>
-      <a className="option" to="/cart"> 
+      </Link>
+      <Link className="option" to="/cart"> 
         cart
-      </a>
+      </Link>
       {/* {currentUser ? 
       <div className="option" onClick={() => auth.signOut()}>sign out</div>
       :
