@@ -24,7 +24,7 @@ const IndexPage = () => (
       alt="A Gatsby astronaut"
       style={{ marginBottom: `1.45rem` }}
     /> */}
-    <Jumbo imgSrc={image1} height="200px" strength={100}>
+    <Jumbo imgSrc={image1} height="400px" strength={100}>
       test
     </Jumbo>
     <Container>
