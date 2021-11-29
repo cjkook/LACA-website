@@ -1,23 +1,29 @@
 @import "../../styles/_variables";
 
 .header {
-  // background-color: black;
-  height: 50px;
+  background: $primaryColor;
+  height: 60px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  // margin-bottom: 15px;
 
   .logo-container {
-    justify-content:flex-end;
+    justify-content:flex-start;
     display: flex;
-    width: 50%;
+    width: 60%;
 
-    .brandTitle {
-      padding: 0 45px;
+    .brand-title {
+      
+      padding: 0px 25px;
       @media only screen and (max-width: 1026px) {
         display: none;
       }
+    }
+
+    .brand-box {
+      background-color: $secondaryColor;
+      z-index: 100;
     }
 
     .animation {
@@ -43,7 +49,7 @@
     width: 50%;
     height: 100%;
     display: flex;
-    padding: 10px 10px;
+    // padding: 10px 10px;
     align-items: right;
     justify-content: flex-end;
     // justify-content: space-between;

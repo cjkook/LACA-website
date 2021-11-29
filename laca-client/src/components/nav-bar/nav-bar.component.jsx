@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 // import AppBar from "@mui/material/AppBar"
-// import Box from "@mui/material/Box"
+import Box from "@mui/material/Box"
 // import Toolbar from "@mui/material/Toolbar"
 // import Typography from "@mui/material/Typography"
 import Button from "@mui/material/Button"
@@ -29,7 +29,7 @@ const NavBar = ({ children }) => {
       <div className="header">
         <div className="logo-container">
           <Link to="/">{/* <Logo className="logo" /> */}</Link>
-          <h1 className="brandTitle">Latin American Cultural Association</h1>
+          <h1 className="brand-title">Latin American Cultural Association</h1>
         </div>
 
         <div className="options">
