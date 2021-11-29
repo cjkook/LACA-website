@@ -14,6 +14,9 @@ import FavoriteIcon from "@mui/icons-material/Favorite"
 import ShareIcon from "@mui/icons-material/Share"
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
+import MenuBookIcon from "@mui/icons-material/MenuBook"
+
+import "./ClassCard.styles.scss"
 
 const ExpandMore = styled(props => {
   const { expand, ...other } = props
@@ -37,19 +40,20 @@ export default function ClassCard(props) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
+        className="card"
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            {props.typeAcronym}
-          </Avatar>
-        }
-        action={
           <IconButton aria-label="settings">
-            <MoreVertIcon />
+            <MenuBookIcon />{" "}
           </IconButton>
         }
+        // action={
+        //   <IconButton aria-label="settings">
+        //     <MoreVertIcon />
+        //   </IconButton>
+        // }
         title={props.title}
         subheader={props.subtitle}
-      />
+      ></CardHeader>
       <CardMedia
         component="img"
         height="194"
@@ -57,17 +61,17 @@ export default function ClassCard(props) {
         alt={props.imgAlt}
       />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.primary">
           {props.shortDesc}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        {/* <IconButton aria-label="add to favorites">
           <FavoriteIcon />
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
-        </IconButton>
+        </IconButton> */}
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}

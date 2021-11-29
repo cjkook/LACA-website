@@ -26,7 +26,7 @@ const IndexPage = () => (
       style={{ marginBottom: `1.45rem` }}
     /> */}
     <Jumbo imgSrc={imageURL} height="400px" strength={100}>
-      test
+      
     </Jumbo>
     <Container>
       <p>

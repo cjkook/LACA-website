@@ -25,7 +25,7 @@ const Jumbo = props => (
         },
       }}
     >
-      <Grid container spacing={3}>
+      {props.children ? <Grid container spacing={3}>
         <Grid item xs>
         </Grid>
         <Grid item xs={6}>
@@ -35,7 +35,7 @@ const Jumbo = props => (
         </Grid>
         <Grid item xs>
         </Grid>
-      </Grid>
+      </Grid> : null}
     </Box>
   </Parallax>
 )
