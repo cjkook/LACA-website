@@ -36,7 +36,7 @@ export const theme = createTheme({
     divider: "#4c5760",
   },
   typography: {
-    fontFamily: "Montserrat",
+    fontFamily: 'Droid Serif',
   },
 })
 

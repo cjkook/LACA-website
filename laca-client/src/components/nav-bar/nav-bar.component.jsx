@@ -8,6 +8,7 @@ import Button from "@mui/material/Button"
 import IconButton from "@mui/material/IconButton"
 import Menu from "@mui/material/Menu"
 import MenuItem from "@mui/material/MenuItem"
+import Divider from "@mui/material/Divider"
 
 import "./nav-bar.styles.scss"
 // ? Use logo
@@ -32,15 +33,6 @@ const NavBar = ({ children }) => {
         </div>
 
         <div className="options">
-          <Link className="option" to="/shop">
-            shop
-          </Link>
-          <Link className="option" to="/contact">
-            contact
-          </Link>
-          <Link className="option" to="/cart">
-            cart
-          </Link>
           <Button
             className="option"
             color="inherit"
@@ -50,7 +42,7 @@ const NavBar = ({ children }) => {
             aria-expanded={open ? "true" : undefined}
             onClick={handleClick}
           >
-            Our Story
+            About
           </Button>
           <Menu
             id="about-menu"
@@ -62,22 +54,64 @@ const NavBar = ({ children }) => {
             }}
           >
             <MenuItem onClick={handleClose} to="/elbuenamigo">
+              <Link to="/test">Our Story</Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose} to="/elbuenamigo">
               <Link to="/test">El Buen Amigo</Link>
             </MenuItem>
-            <MenuItem onClick={handleClose}>Santiago</MenuItem>
-            <MenuItem onClick={handleClose}>Our Story</MenuItem>
+            <MenuItem onClick={handleClose} to="/elbuenamigo">
+              <Link to="/test">Santiago</Link>
+            </MenuItem>
           </Menu>
           <Button
             className="option"
             color="inherit"
-            id="basic-button"
-            aria-controls="basic-menu"
+            id="service-button"
+            aria-controls="service-menu"
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
             onClick={handleClick}
           >
             Services
           </Button>
+          <Menu
+            id="service-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            MenuListProps={{
+              "aria-labelledby": "service-button",
+            }}
+          >
+            <MenuItem onClick={handleClose} to="/elbuenamigo">
+              <Link to="/test">Our Story</Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose} to="/elbuenamigo">
+              <Link to="/test">El Buen Amigo</Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose} to="/elbuenamigo">
+              <Link to="/test">Santiago</Link>
+            </MenuItem>
+          </Menu>
+          <Menu
+            id="about-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            MenuListProps={{
+              "aria-labelledby": "about-button",
+            }}
+          >
+            <MenuItem onClick={handleClose} to="/elbuenamigo">
+              <Link to="/test">Our Story</Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose} to="/elbuenamigo">
+              <Link to="/test">El Buen Amigo</Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose} to="/elbuenamigo">
+              <Link to="/test">Santiago</Link>
+            </MenuItem>
+          </Menu>
           <Button
             className="option"
             color="inherit"
@@ -98,6 +132,7 @@ const NavBar = ({ children }) => {
         } */}
         </div>
       </div>
+      <Divider />
     </>
   )
 }

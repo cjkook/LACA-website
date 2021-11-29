@@ -7,9 +7,10 @@ import Seo from "../components/seo"
 import Container from "@mui/material/Container"
 import Jumbo from "../components/jumbo/Jumbo.component"
 
-const image1 =
+const imageURL =
   "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
 
+const imgLocal = "./images/gatsby-astronaut.png"
 const IndexPage = () => (
   <Layout>
     <Seo title="LACA" />
@@ -24,7 +25,7 @@ const IndexPage = () => (
       alt="A Gatsby astronaut"
       style={{ marginBottom: `1.45rem` }}
     /> */}
-    <Jumbo imgSrc={image1} height="400px" strength={100}>
+    <Jumbo imgSrc={imageURL} height="400px" strength={100}>
       test
     </Jumbo>
     <Container>
