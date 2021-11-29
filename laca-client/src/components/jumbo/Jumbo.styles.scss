@@ -1,10 +1,14 @@
 .inside {
-  background: "white";
-  padding: 20;
+  background-color: #C8553D;
+  color: aliceblue;
+  padding: 10px 10px 4px 4px;
+  margin:10px;
   position: "absolute";
   top: "50%";
   left: "50%";
   transform: "translate(-50%,-50%)";
+  justify-content: space-between;
+  text-align: center;
 }
 
 .image {

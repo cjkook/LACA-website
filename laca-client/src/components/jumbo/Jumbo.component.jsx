@@ -1,5 +1,8 @@
 import * as React from "react"
-import { Parallax, Background } from "react-parallax"
+import { Parallax } from "react-parallax"
+import Box from "@mui/material/Box"
+import Paper from "@mui/material/Paper"
+import Grid from "@mui/material/Grid"
 
 import "./Jumbo.styles.scss"
 
@@ -7,12 +10,33 @@ const Jumbo = props => (
   <Parallax
     className="image"
     bgImage={props.imgSrc}
-    style={{height: `${props.height}`}}
+    style={{ height: `${props.height}` }}
     strength={props.strength}
   >
-    <div>
-      <div className="inside">{props.children}</div>
-    </div>
+    <Box
+      sx={{
+        display: "flex",
+        flexWrap: "wrap",
+        align: "center",
+        "& > :not(style)": {
+          m: 1,
+          width: "90%",
+          height: 256,
+        },
+      }}
+    >
+      <Grid container spacing={3}>
+        <Grid item xs>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper variant="outlined" className="inside">
+            {props.children}
+          </Paper>
+        </Grid>
+        <Grid item xs>
+        </Grid>
+      </Grid>
+    </Box>
   </Parallax>
 )
 

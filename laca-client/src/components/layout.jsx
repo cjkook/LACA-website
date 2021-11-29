@@ -8,7 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { createTheme, ThemeProvider, styled } from "@mui/material/styles"
+import { createTheme, ThemeProvider } from "@mui/material/styles"
 
 import NavBar from "./nav-bar/nav-bar.component"
 
