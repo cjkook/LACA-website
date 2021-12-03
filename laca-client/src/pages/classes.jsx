@@ -16,17 +16,6 @@ const imgLocal = "./images/gatsby-astronaut.png"
 const ClassPage = () => (
   <Layout>
     <Seo title="LACA" />
-    {/* <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    /> */}
     <Jumbo imgSrc={imageURL} height="200px" strength={100}>
       <h2>Learn Spanish with authentic native speaking teachers.</h2>
     </Jumbo>

@@ -38,7 +38,7 @@ export default function ClassCard(props) {
   }
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, borderRadius: 8 }}>
       <CardHeader
         className="card"
         avatar={

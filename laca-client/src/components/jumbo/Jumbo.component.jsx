@@ -25,17 +25,21 @@ const Jumbo = props => (
         },
       }}
     >
-      {props.children ? <Grid container spacing={3}>
-        <Grid item xs>
+      {props.children ? (
+        <Grid container spacing={3}>
+          <Grid item xs></Grid>
+          <Grid item xs={6}>
+            <Paper
+              variant="outlined"
+              className="inside"
+              sx={{ bgcolor: "primary.secondary" }}
+            >
+              {props.children}
+            </Paper>
+          </Grid>
+          <Grid item xs></Grid>
         </Grid>
-        <Grid item xs={6}>
-          <Paper variant="outlined" className="inside">
-            {props.children}
-          </Paper>
-        </Grid>
-        <Grid item xs>
-        </Grid>
-      </Grid> : null}
+      ) : null}
     </Box>
   </Parallax>
 )

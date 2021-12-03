@@ -132,7 +132,6 @@ const NavBar = ({ children }) => {
         } */}
         </div>
       </div>
-      <Divider />
     </>
   )
 }
