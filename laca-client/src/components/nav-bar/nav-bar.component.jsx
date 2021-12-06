@@ -16,7 +16,7 @@ const NavBar = ({ children }) => {
         </div>
 
         <div className="options">
-          <NavMenu/>
+          <NavMenu />
         </div>
       </div>
     </>

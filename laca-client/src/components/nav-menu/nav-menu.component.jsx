@@ -8,9 +8,8 @@ import { menuItems } from "./menuItems.js";
 
 import "./nav-menu.styles.scss"
 
-console.log(menuItems)
 const NavMenu = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = React.useState(false);
 
   const handleClick = (index, event) => {
     setAnchorEl({ [index]: event.currentTarget });
@@ -23,26 +22,16 @@ const NavMenu = () => {
   return (
     <>
       {Object.keys(menuItems).map((item, index) => (
-        
         <div key={index}>
-        {/* <Button
-            className="option"
-            color="inherit"
-            id="basic-button"
-            aria-controls="basic-menu"
-            aria-haspopup="true"
-            aria-expanded={open ? "true" : undefined}
-            onClick={handleClick}
-          > */}
           <Button className="option" color="inherit" onClick={e => handleClick(index, e)}>
             {item} <i/>
           </Button>
           <Menu
             anchorEl={anchorEl && anchorEl[index]}
             keepMounted
-            open={anchorEl && Boolean(anchorEl[index])}
+            open={anchorEl && (anchorEl[index])}
             onClose={handleClose}
-            getContentAnchorEl={null}
+            getcontentanchorel={null}
           >
             {menuItems[item].map((menuitems, menuindex) => (
               <MenuItem
