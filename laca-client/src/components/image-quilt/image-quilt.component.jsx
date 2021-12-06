@@ -31,9 +31,7 @@ export default function QuiltedImageList() {
             alt={item.title}
             loading="lazy"
           />
-          <StaticImage
-            {...srcset(item.img, 121, item.rows, item.cols)}
-          />
+          {/* <StaticImage {...srcset(item.img, 121, item.rows, item.cols)} /> */}
         </ImageListItem>
       ))}
     </ImageList>
@@ -42,7 +40,7 @@ export default function QuiltedImageList() {
 
 const itemData = [
   {
-    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+    img: "https://firebasestorage.googleapis.com/v0/b/emporium-db-38a72.appspot.com/o/michael-odysseus-bsp-odysseus-bsp-by-michael-odysseus-michae.jpg?alt=media&token=335efb46-238b-4db5-944c-990f6c40e7cd",
     title: "Breakfast",
     rows: 2,
     cols: 2,

@@ -4,7 +4,7 @@ import Button from "@mui/material/Button"
 import Menu from "@mui/material/Menu"
 import MenuItem from "@mui/material/MenuItem"
 
-import { menuItems } from "./menuItems.js";
+import { menuItems } from "../../data/menuItems.js";
 
 import "./nav-menu.styles.scss"
 
